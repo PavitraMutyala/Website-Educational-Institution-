@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Section</title>
+    <link rel="stylesheet" href="programme.css">
+</head>
+<body>
+    <section class="classroom">
+        <div class="container">
+            <div class="classroom-content">
+                <div class="classroom-image">
+                    <img class="mySlides" src="classroom .jpg" style="opacity: 1;">
+                    <img class="mySlides" src="classroom2.jpg" style="opacity: 0;">
+                    <img class="mySlides" src="classroom3.jpg" style="opacity: 0;">
+                </div>
+                <div class="classroom-text">
+                    <h2>CLASSROOM</h2>
+                    <p>Aman Academy offers a variety of courses and study materials, presumably tailored to the needs of students preparing for engineering and medical entrance exams. This suggests a comprehensive approach to exam preparation.</p>
+                    <p>The coaching centre emphasizes the importance of building a strong foundational understanding of the subjects. This foundation is likely seen as crucial for students to excel in these highly competitive exams.</p>
+                    <p>The mention of "state-of-the-art infrastructure" suggests that the coaching centre provides modern facilities and resources to support students in their preparation.</p>
+                    <p>The use of updated course material indicates that it keeps its study materials current and relevant to reflect the latest developments in the subjects.</p>
+                    <p>The ultimate goal is not only to improve students' performance but also to boost their confidence in tackling these challenging entrance exams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2>Key Features of Yearlong Programs</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Highly Experienced Trained Faculties</h3>
+                    <p>Arjuna's Batch boasts a team of experienced and well-trained instructors who are likely to have expertise in teaching for competitive exams like IIT-JEE and NEET.</p>
+                </div>
+                <div class="feature">
+                    <h3>Modern Digital Classroom</h3>
+                    <p>The use of modern, digitally equipped classrooms enhances the learning experience by incorporating technology and interactive teaching methods.</p>
+                </div>
+                <div class="feature">
+                    <h3>Air-Cooled Classrooms</h3>
+                    <p>Air-cooled classrooms provide comfort to students, ensuring they can focus on their studies in a pleasant environment.</p>
+                </div>
+                <div class="feature">
+                    <h3>Spacious Retiring Room</h3>
+                    <p>A spacious retiring room with necessary facilities can be valuable for students to relax and recharge during breaks, contributing to a productive learning atmosphere.</p>
+                </div>
+                <div class="feature">
+                    <h3>Scientific Planning</h3>
+                    <p>The entire day is planned scientifically to optimize the productivity of students, likely including a well-structured timetable for various subjects and activities.</p>
+                </div>
+                <div class="feature">
+                    <h3>Innovative Teaching</h3>
+                    <p>Innovative teaching methods are employed to make the learning process engaging and effective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.opacity = "1";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>

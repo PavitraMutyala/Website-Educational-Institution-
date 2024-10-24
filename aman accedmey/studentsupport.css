@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #243C8F;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #243C8F;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* FAQ Styles */
+#faqs .faq-item {
+    margin-bottom: 20px;
+}
+
+#faqs h3 {
+    font-size: 1.4em;
+    color: #343a40;
+    margin-top: 10px;
+}
+
+#faqs p {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+}
+
+
+
+
+/* 
+.support-form h2 {
+    color: #4a90e2;
+}
+
+.support-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-form label {
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+.support-form input, .support-form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.support-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.support-form button:hover {
+    background-color: #357abd;
+}
+
+}
+
+@media (max-width: 768px) {
+    .support-form input, .support-form textarea {
+        width: 100%;
+    }
+} */

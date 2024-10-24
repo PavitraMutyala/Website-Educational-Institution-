@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #bcb2b223;
+    color: #333;
+    background-image: url(ppbg.png);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.classroom-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.classroom-image {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: 20px;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.classroom-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.classroom-image img:first-child {
+    opacity: 1;
+}
+
+.classroom-text {
+    max-width: 600px;
+    flex: 1;
+    text-align: justify;
+}
+
+.classroom-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.classroom-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .classroom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classroom-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .classroom-text h2,
+    .classroom-text p {
+        text-align: center;
+    }
+}
+
+.features {
+    background-color: #eef2f7;
+    padding: 40px 0;
+    background-image:url(ppbg.png) ;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #1e2a78;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature {
+        flex: 1 1 100%;
+    }
+}
